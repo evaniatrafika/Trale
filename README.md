@@ -1,8 +1,7 @@
-# Trale
-##**C23-PR510 – Product Capstone Bangkit Academy 2023**
+## **C23-PR510 – Product Capstone Bangkit Academy 2023**
 
 | Nama | ID Cohort | Universitas |
-| :----| :----:| ----:|
+| :----:| :----:| :----:|
 | Muhammad Dhoni Apriyadi | M040DSX1474 | Institut Teknologi Sumatera |
 | Anugra Salaza | M038DSX2316 | Institut Teknologi Sepuluh Nopember |
 | Deyyana Aulia Hakim | M038DKY4137 | Institut Teknologi Sepuluh Nopember |
