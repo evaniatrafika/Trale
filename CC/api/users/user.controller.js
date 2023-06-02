@@ -57,6 +57,7 @@ module.exports={
     getUserByUserId: (req, res)=>{
         const id = req.params.id;
         getUserByUserId(id, (err,results)=>{
+
             if (err){
                 console.log(err);
                 return;
@@ -144,6 +145,7 @@ module.exports={
                 return res.json({
                     success:1,
                     message: "Login Successfully",
+                    data: results,
                     token: jsonwebtoken
                 });
             }else{
