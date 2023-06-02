@@ -8,11 +8,11 @@ const {
   updateUser,
   deleteUser,
 } = require("./user.controller");
-router.get("/",checkToken, getUsers);
+router.get("/",getUsers);
 router.post("/register",checkToken, createUser);
 router.get("/:id",checkToken, getUserByUserId);
 router.post("/login", login);
-router.patch("/", updateUser);
+router.patch("/update",checkToken, updateUser);
 router.delete("/",checkToken, deleteUser);
 
 module.exports = router;
