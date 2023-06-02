@@ -45,25 +45,26 @@ module.exports = {
             }
         );
     },
-    updateUser: (data,callBack)=>{
+    updateUser: (data, callBack) => {
         pool.query(
-            `update user set nama=?, address=?, telp=?, email=?, password=?, bio=? where id = ? `,
-        [
-            data.id,
-            data.nama,
-            data.address,
-            data.telp,
-            data.email,
-            data.password,
-            data.bio
-        ],
-        (error, result, fields) =>{
-            if(error){
-                callBack(error);
+            `UPDATE user SET nama=?, address=?, telp=?, email=?, password=?, bio=? WHERE id=?`,
+            [
+                data.nama,
+                data.address,
+                data.telp,
+                data.email,
+                data.password,
+                data.bio,
+                data.id
+            ],
+            (error, result) => {
+                if (error) {
+                    callBack(error);
+                } else {
+                    callBack(null, result);
+                }
             }
-            return callBack(null, result);
-        }
-            );
+        );
     },
     deleteUser: (data,callBack)=>{
         pool.query(
